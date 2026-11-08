@@ -20,7 +20,8 @@ jobs:
         run: echo "BRANCH_NAME=${{ github.repository_owner == 'Guovin' && 'gd' || 'master' }}" >> $GITHUB_ENV
       - uses: actions/checkout@v4
         with:
-          ref: ${{ env.BRANCH_NAME }}
+          ref: IPTV
+         
       - name: Run with setup-python 3.13
         uses: actions/setup-python@v4
         with:
